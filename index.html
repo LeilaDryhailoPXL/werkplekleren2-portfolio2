@@ -8,6 +8,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,800&display=swap" rel="stylesheet">
+
+
+
+
+    <style>
+        header, .site-header, .header, .navbar, .header-container{
+            position:fixed !important;
+            top:0 !important;
+            left:0 !important;
+            width:100% !important;
+            z-index:9999 !important;
+            display:flex !important;
+            align-items:center !important;
+            justify-content:space-between !important;
+        }
+        header nav, .site-header nav, .navbar nav, .site-nav, .nav{
+            margin-left:auto !important;
+            display:flex !important;
+            align-items:center !important;
+            justify-content:flex-end !important;
+            gap:28px !important;
+        }
+        body{
+            padding-top:90px !important;
+        }
+        html{
+            scroll-padding-top:100px !important;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -20,6 +50,7 @@
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#wpl2">WPL2</a>
+        <a href="wpl1.html">WPL1</a>
         <a href="#free">Free Section</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -146,8 +177,7 @@
 
             <div class="kikk-showcase kikk-correct-showcase">
                 <figure class="kikk-item kikk-story-card">
-                    <video autoplay muted loop playsinline preload="auto">
-                        <source src="assets/kikk_story.mp4" type="video/mp4">
+                    <video autoplay muted loop playsinline autoplay muted loop playsinline preload="auto" autoplay muted loop playsinline><source src="assets/streamsy_autoplay.mp4" type="video/mp4">
                     </video>
                     <figcaption>Instagram Story</figcaption>
                 </figure>
@@ -281,11 +311,16 @@
                     </div>
                 </div>
 
-                <div class="phone-video">
-                    <video autoplay muted loop playsinline preload="auto" class="auto-video">
-                        <source src="assets/streamsy_prototype_small.mp4">
+
+
+                <div class="wpl2-video-box">
+                    <video class="streamsy-video" autoplay muted loop playsinline preload="metadata">
+                        <source src="assets/streamsy_original_autoplay.mp4" type="video/mp4">
                     </video>
+
                 </div>
+
+
             </div>
         </article>
     </section>
@@ -332,9 +367,13 @@
                 <img src="assets/wpl2_game_screens.jpeg" alt="Missie Maasland interactive game screens">
                 <img src="assets/wpl2_website_screens.png" alt="Missie Maasland website screens">
 
-                <video autoplay muted loop playsinline preload="auto">
-                    <source src="assets/wpl2_campaign_video.mp4" type="video/mp4">
-                </video>
+                <div class="wpl2-video-box">
+                    <video id="wpl2CaseVideo" class="wpl2-video" controls playsinline preload="metadata">
+                        <source src="assets/wpl2_case_new_video.mp4" type="video/mp4">
+                        Je browser ondersteunt deze video niet.
+                    </video>
+                    <button class="sound-toggle" type="button" data-video="wpl2CaseVideo" aria-label="Geluid aan of uit zetten">Geluid uit</button>
+                </div>
 
             </div>
         </div>
@@ -458,5 +497,28 @@
 </footer>
 
 <script src="script.js"></script>
+
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.sound-toggle').forEach(function (button) {
+            const video = document.getElementById(button.dataset.video);
+            if (!video) return;
+            video.muted = false;
+            function updateLabel() {
+                button.textContent = video.muted ? 'Geluid aan' : 'Geluid uit';
+            }
+            button.addEventListener('click', function () {
+                video.muted = !video.muted;
+                updateLabel();
+            });
+            video.addEventListener('volumechange', updateLabel);
+            updateLabel();
+        });
+    });
+</script>
+
 </body>
 </html>
