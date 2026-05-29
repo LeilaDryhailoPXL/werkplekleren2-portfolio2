@@ -447,7 +447,6 @@ footer{
 }
 
 
-/* V3 cover update */
 .portfolio-cover{
     min-height:calc(100vh - 86px);
     display:grid;
@@ -672,7 +671,7 @@ img{
 }
 
 
-/* V4 — softer personal styling, less template-like */
+
 :root{--bg:#fff8f4;--bg-2:#f7e4e1;--ink:#27211f;--muted:#746967;--line:#ead2cf;--rose:#c88999;--rose-dark:#965d6d;--cream:#fffdf9;}
 body{font-family:"DM Sans",system-ui,-apple-system,Segoe UI,sans-serif;background:radial-gradient(circle at 8% 8%, rgba(200,137,153,.22), transparent 30rem),radial-gradient(circle at 88% 28%, rgba(245,205,196,.45), transparent 28rem),linear-gradient(180deg,#fff8f4,#fffdfb 42%,#fbf0ee);}
 h1,h2,h3,.brand,.big-year,.case-number,.cover-card span{font-family:"Fraunces", Georgia, serif;}
@@ -697,14 +696,13 @@ h1,h2,h3{letter-spacing:-.055em;}
 @media(max-width:1050px){.kikk-assets{grid-template-columns:1fr 1fr}.gif-card.landscape{grid-column:1 / -1}.free-story{grid-template-columns:1fr}}
 @media(max-width:760px){.kikk-assets{grid-template-columns:1fr}.gif-card.landscape{grid-column:auto}}
 
-/* V5 fixes */
+
 .cover-subtitle{max-width:720px}.personal-note p{font-size:.96rem}.skill-card{grid-column:span 2}.skill-list{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}.skill-list div{padding:16px 12px;border-radius:18px;background:rgba(255,250,247,.85);border:1px solid rgba(234,210,207,.8)}.skill-list b{display:block;font-size:.9rem}.skill-list small{display:block;margin-top:6px;line-height:1.3;color:var(--muted)}
 .kikk-showcase{display:grid;grid-template-columns:.72fr .72fr 1.36fr;grid-template-areas:"story post banner";gap:18px;align-items:end}.kikk-item{margin:0;padding:12px;border-radius:26px;background:rgba(255,255,255,.72);border:1px solid rgba(231,207,217,.85);box-shadow:0 24px 65px rgba(93,54,71,.12);overflow:hidden;transition:.45s ease}.kikk-item:hover{transform:translateY(-8px) rotate(-.5deg)}.kikk-item img{width:100%;height:auto;display:block;border-radius:18px;object-fit:cover}.kikk-story{grid-area:story}.kikk-post{grid-area:post}.kikk-banner{grid-area:banner}.kikk-story img{aspect-ratio:9/16}.kikk-post img{aspect-ratio:1/1}.kikk-banner img{aspect-ratio:1.91/1}.kikk-item figcaption{margin-top:10px;font-size:.82rem;color:var(--muted)}
 .free-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:32px;align-items:start}.free-intro{padding:32px;border-radius:30px;background:rgba(255,255,255,.58);border:1px solid rgba(231,207,217,.75)}.free-intro p{font-family:inherit;font-size:1.08rem;font-weight:400;line-height:1.9;color:var(--muted)}.free-mini-grid{display:grid;gap:14px}.free-mini-grid article{padding:24px;border-radius:28px;background:rgba(255,255,255,.74);border:1px solid rgba(231,207,217,.75);box-shadow:0 18px 45px rgba(93,54,71,.08)}.free-mini-grid span{color:var(--rose-dark);font-size:.78rem;font-weight:800;letter-spacing:.14em}.free-mini-grid h3{font-family:inherit;letter-spacing:0;line-height:1.15;font-size:1.1rem;margin:10px 0}.free-mini-grid p{color:var(--muted);font-size:.98rem}.large-text{font-family:inherit!important;font-size:1.1rem!important;line-height:1.85!important;font-weight:400!important;color:var(--muted)!important}
 @media(max-width:1050px){.skill-list{grid-template-columns:repeat(2,1fr)}.kikk-showcase{grid-template-columns:1fr 1fr;grid-template-areas:"story post" "banner banner"}.free-layout{grid-template-columns:1fr}}@media(max-width:760px){.skill-list{grid-template-columns:1fr}.kikk-showcase{grid-template-columns:1fr;grid-template-areas:"story" "post" "banner"}}
 
 
-/* V6 fixes: remove software focus, reliable GIF layout */
 .kikk-showcase{
     display:grid !important;
     grid-template-columns:0.72fr 0.72fr 1.36fr !important;
@@ -776,7 +774,7 @@ h1,h2,h3{letter-spacing:-.055em;}
 }
 
 
-/* Working v7 video fixes */
+
 .auto-video,
 .phone-video video,
 .laptop video,
@@ -799,7 +797,6 @@ h1,h2,h3{letter-spacing:-.055em;}
 }
 
 
-/* Final WPL2 update */
 .wpl2-extra {
     padding: 0 clamp(20px, 7vw, 110px) 110px;
 }
@@ -857,7 +854,6 @@ h1,h2,h3{letter-spacing:-.055em;}
 }
 
 
-/* KIKK real video final fix */
 .kikk-video-showcase {
     display: grid !important;
     grid-template-columns: .72fr .72fr 1.36fr !important;
@@ -927,8 +923,6 @@ h1,h2,h3{letter-spacing:-.055em;}
     }
 }
 
-
-/* KIKK corrected final: proper order, labels, and larger media */
 .case:has(.kikk-correct-showcase) {
     grid-template-columns: 70px 0.65fr 1.75fr !important;
     gap: 34px !important;
@@ -1006,7 +1000,6 @@ h1,h2,h3{letter-spacing:-.055em;}
 }
 
 
-/* Small final WPL2 campaign update */
 .wpl2-campaign-start{
     display:grid;
     grid-template-columns:.42fr .58fr;
@@ -1058,7 +1051,6 @@ h1,h2,h3{letter-spacing:-.055em;}
 }
 
 
-/* FINAL WPL2 layout fix */
 .wpl2-campaign-start {
     display: grid !important;
     grid-template-columns: 1fr !important;
@@ -1111,7 +1103,6 @@ h1,h2,h3{letter-spacing:-.055em;}
 }
 
 
-/* FINAL SMALL TIKTOK VIDEO */
 .campaign-media-grid video {
     width: 320px !important;
     height: 568px !important;
@@ -1125,7 +1116,6 @@ h1,h2,h3{letter-spacing:-.055em;}
 }
 
 
-/* About cards cleanup */
 .compact-info {
     display: grid !important;
     grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
@@ -1225,7 +1215,6 @@ h1,h2,h3{letter-spacing:-.055em;}
 }
 
 
-/* Final home + about alignment update */
 .portfolio-cover {
     grid-template-columns: 0.95fr 1.05fr !important;
     gap: clamp(40px, 6vw, 90px) !important;
@@ -1301,7 +1290,6 @@ h1,h2,h3{letter-spacing:-.055em;}
     white-space: nowrap;
 }
 
-/* About section alignment */
 .about-layout.about-with-photo {
     display: grid !important;
     grid-template-columns: 280px minmax(360px, 520px) minmax(420px, 1fr) !important;
@@ -1394,7 +1382,6 @@ h1,h2,h3{letter-spacing:-.055em;}
 }
 
 
-/* Final corrections: Design Approach + About info cleanup */
 .personal-note {
     background: rgba(247, 228, 225, .45) !important;
     border: 0 !important;
@@ -1415,7 +1402,6 @@ h1,h2,h3{letter-spacing:-.055em;}
     max-width: 100% !important;
 }
 
-/* Make About cards visually cleaner and more even */
 .compact-info {
     align-items: stretch !important;
 }
@@ -1437,7 +1423,6 @@ h1,h2,h3{letter-spacing:-.055em;}
     border-bottom: 1px solid rgba(231,207,217,.45) !important;
 }
 
-/* Keep skills inside the card */
 .skill-chips {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
@@ -1457,7 +1442,6 @@ h1,h2,h3{letter-spacing:-.055em;}
 }
 
 
-/* FINAL alignment fix for About cards */
 .about-layout.about-with-photo {
     grid-template-columns: 280px minmax(360px, 520px) minmax(520px, 1fr) !important;
 }
@@ -1523,7 +1507,6 @@ h1,h2,h3{letter-spacing:-.055em;}
 }
 
 
-/* FINAL ABOUT FIX */
 .compact-info{
     display:grid!important;
     grid-template-columns:repeat(3,minmax(0,1fr))!important;
@@ -1596,7 +1579,6 @@ h1,h2,h3{letter-spacing:-.055em;}
 
 
 
-/* FINAL LANGUAGE CARD FIX */
 .language-list {
     display: grid !important;
     gap: 12px !important;
@@ -1649,7 +1631,6 @@ h1,h2,h3{letter-spacing:-.055em;}
 }
 
 
-/* Kruidvat final image replacement */
 .image-panel img[src*="kruidvat_logos"] {
     width: 100% !important;
     height: auto !important;
@@ -1665,9 +1646,6 @@ h1,h2,h3{letter-spacing:-.055em;}
 
 
 
-
-
-/* REAL FINAL FIX: readable big serif titles */
 html body h1,
 html body h2,
 html body .readable-display-title,
@@ -1681,26 +1659,22 @@ html body .cover-left h1 {
     text-rendering: optimizeLegibility !important;
 }
 
-/* Contact title was the most glued one */
 html body .contact-card h2,
 html body .readable-display-title {
     font-size: clamp(3rem, 5.1vw, 6.4rem) !important;
     max-width: 1120px !important;
 }
 
-/* About title and section titles */
 html body .section-head h2 {
     font-size: clamp(3rem, 5.4vw, 6.6rem) !important;
 }
 
-/* Main cover name should stay stylish but readable */
 html body .cover-left h1 {
     letter-spacing: -0.035em !important;
     word-spacing: 0.12em !important;
     line-height: 0.9 !important;
 }
 
-/* Project card titles are bold too, make them less glued */
 html body .case-copy h3,
 html body .wpl-copy h3,
 html body .free-mini-grid h3 {
@@ -1709,13 +1683,11 @@ html body .free-mini-grid h3 {
     line-height: 1.08 !important;
 }
 
-/* Prevent giant words from stretching edge-to-edge */
 html body .contact-card {
     overflow: hidden !important;
 }
 
 
-/* Beyond the screen final layout */
 .beyond-showcase {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1759,7 +1731,6 @@ html body .contact-card {
 }
 
 
-/* Beyond the screen: text + all photos */
 .free-layout {
     display: grid !important;
     grid-template-columns: .42fr .58fr !important;
@@ -1829,7 +1800,6 @@ html body .contact-card {
 }
 
 
-/* Pizzeria project */
 .pizzeria-showcase {
     display: grid;
     grid-template-columns: 1.35fr .65fr;
@@ -1890,7 +1860,6 @@ html body .contact-card {
 }
 
 
-/* Final pizzeria project: project only, no mockups */
 .pizzeria-showcase.single-site {
     display: block !important;
 }
@@ -1913,7 +1882,6 @@ html body .contact-card {
     display: block !important;
 }
 
-/* Refined Beyond the screen */
 .refined-beyond {
     display: grid !important;
     grid-template-columns: .34fr .66fr !important;
@@ -1999,7 +1967,6 @@ html body .contact-card {
 }
 
 
-/* FINAL: Beyond the screen small horizontal strip + no pizza */
 .compact-beyond {
     display: grid !important;
     grid-template-columns: .42fr .58fr !important;
@@ -2171,7 +2138,6 @@ html body .contact-card {
 }
 
 
-/* ABSOLUTE FINAL Beyond the screen fix */
 .beyond-clean {
     max-width: 1120px !important;
     margin: 0 auto !important;
@@ -2259,7 +2225,6 @@ html body .contact-card {
 }
 
 
-/* FINAL Beyond layout: text centered, long horizontal scroll, no crop */
 .beyond-clean {
     max-width: 1400px !important;
     margin: 0 auto !important;
@@ -2342,7 +2307,6 @@ html body .contact-card {
 }
 
 
-/* WPL2: only first visual replaced by 4-image horizontal strip; old video/site/screens remain */
 .wpl2-new-scroll {
     display: flex !important;
     gap: 16px !important;
@@ -2375,7 +2339,6 @@ html body .contact-card {
     border-radius: 999px !important;
 }
 
-/* Free section stays only for moodboards/mockups */
 .beyond-text {
     background: transparent !important;
     border: none !important;
@@ -2383,7 +2346,6 @@ html body .contact-card {
 }
 
 
-/* Final WPL2 scroll labels */
 .wpl2-new-scroll{display:flex!important;gap:16px!important;overflow-x:auto!important;overflow-y:hidden!important;width:100%!important;padding:6px 0 18px!important;scroll-snap-type:x proximity!important;-webkit-overflow-scrolling:touch!important;}
 .wpl2-scroll-card{flex:0 0 auto!important;margin:0!important;display:flex!important;flex-direction:column!important;align-items:center!important;gap:10px!important;scroll-snap-align:start!important;background:transparent!important;border:0!important;box-shadow:none!important;}
 .wpl2-scroll-card img{height:250px!important;width:auto!important;max-width:none!important;object-fit:contain!important;border-radius:24px!important;box-shadow:0 18px 45px rgba(93,54,71,.10)!important;background:transparent!important;}
@@ -2391,7 +2353,6 @@ html body .contact-card {
 .wpl2-new-scroll::-webkit-scrollbar{height:8px!important}.wpl2-new-scroll::-webkit-scrollbar-thumb{background:rgba(151,96,112,.28)!important;border-radius:999px!important}
 
 
-/* Gentle responsive fix: keeps original design, only adapts sizes */
 *,
 *::before,
 *::after {
@@ -2521,9 +2482,6 @@ video {
 }
 
 
-/* --- Device mockup improvements --- */
-
-/* White laptop instead of black */
 .laptop{
     background: rgba(255,255,255,.92) !important;
     border:1px solid rgba(228,212,220,.9);
@@ -2543,7 +2501,6 @@ video {
     border-radius:22px !important;
 }
 
-/* Phone prototype gets lighter premium frame */
 .phone-video{
     background: linear-gradient(180deg,#ffffff,#f7f2f5) !important;
     border:1px solid rgba(228,212,220,.9);
@@ -2572,7 +2529,6 @@ video {
 }
 
 
-/* WPL2 video replacement: playable with sound controls */
 .wpl2-video-box {
     width: min(100%, 520px) !important;
     margin: 24px auto !important;
@@ -2610,7 +2566,6 @@ video {
 }
 
 
-/* WPL2 video with sound button */
 .wpl2-video-box {
     width: min(100%, 520px) !important;
     margin: 24px auto !important;
@@ -2645,7 +2600,6 @@ video {
     letter-spacing: .04em !important;
 }
 
-/* WPL1 separate page */
 .wpl1-page {
     padding-top: 130px !important;
 }
@@ -2721,7 +2675,6 @@ video {
     }
 }
 
-/* Final actual video placement fix */
 .streamsy-video {
     width: 100% !important;
     height: 100% !important;
@@ -2765,7 +2718,6 @@ video {
 }
 
 
-/* Center WPL2 video block */
 #wpl2 .wpl2-video-box {
     margin-left: auto !important;
     margin-right: auto !important;
@@ -2785,7 +2737,6 @@ video {
     margin-right: auto !important;
 }
 
-/* WPL1 separate page */
 .wpl1-page {
     padding-top: 130px !important;
 }
